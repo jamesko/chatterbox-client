@@ -37,10 +37,19 @@ app.fetch = function(){
   });
 };
 
+app.clearMessages = function(){
+  $("#chats").children().remove();
+};
 
+app.addMessage = function(message){
+  var $span = $("<span class='chat'>"+message.username+": "+message.text+"</span>");  
+  $("#chats").append($span);
+};
 
-
-
+app.addRoom = function(room){
+  var $span = $("<span class='chat'>"+room+"</span>");  
+  $("#roomSelect").append($span);  
+};
 
 
 
