@@ -16,8 +16,17 @@
     <div id="main">
       <h1>chatterbox</h1>
       <!-- Your HTML gos here! -->
-      <div id="chats" class='chat'></div>
-      //need to add element with id of roomSelect
+      <!--<div class="spinner"><img src="/images/spiffygif_46x46.gif"></div>-->
+      <div id="rooms">
+      Room:
+        <select id="roomSelect">
+        </select>
+      </div>
+      <form id="send">
+        <input type="text" name="message" id="message"/>
+        <input type="submit" name="submit" class="submit"/>
+      </form>
+      <div id="chats"></div>
     </div>
   </body>
 </html>
